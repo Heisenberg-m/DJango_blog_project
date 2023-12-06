@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'profile.css' %}">
+</head>
+<body>
+    <header class="profile-header">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" width="150" height="150">
+        </div>
+        <!-- Edit Profile Button -->
+        <button class="edit-profile-button">Edit Profile</button>
+        <a href="{% url 'userlogout' %}"><button class="edit-profile-button" type="submit">Logout</button></a>
+        <!-- User Info -->
+        <div class="user-info">
+            <h1 class="user-name">{{ fname }} {{ lname }}</h1>
+            <p class="user-username">@{{ username }}</p>
+            <p class="user-joined">Joined on: {{ doj|date:"Y-m-d" }}</p>
+        </div>
+        
+    </header>
+
+    <!-- Bio, DOB, and Location -->
+    <section class="profile-details">
+        <!-- Bio -->
+        <div class="bio">
+            <h2>Bio</h2>
+            <p class="user-bio">User bio goes here...</p>
+        </div>
+        <!-- Date of Birth (DOB) -->
+        <div class="dob">
+            <h2>Date of Birth</h2>
+            <p class="user-dob">YYYY-MM-DD</p>
+        </div>
+        <!-- Location -->
+        <div class="location">
+            <h2>Location</h2>
+            <p class="user-location">User location goes here...</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(27, 25, 25);
+    color: white;
+}
+
+/* Header styles */
+.profile-header {
+    position: relative;
+    background-color: rgb(42, 132, 168);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1); /* Hover effect to slightly enlarge the profile picture */
+}
+
+.user-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.user-name {
+    font-size: 24px;
+    color: white;
+}
+
+.user-username {
+    font-size: 16px;
+    color: white;
+}
+
+.user-joined {
+    font-size: 14px;
+    color: white;
+}
+
+/* Edit Profile Button */
+.edit-profile-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(42, 132, 168);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.edit-profile-button:hover {
+    background-color: rgb(27, 25, 25); /* Hover effect to change button color */
+}
+
+/* Profile Details */
+.profile-details {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+/* Individual detail sections (Bio, DOB, Location) */
+.profile-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.user-bio,
+.user-dob,
+.user-location {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.user-bio:hover,
+.user-dob:hover,
+.user-location:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+}
+
+/* Add additional styles as needed */

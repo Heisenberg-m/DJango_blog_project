@@ -1,0 +1,199 @@
+/* Reset some default styles to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(27, 25, 25);
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Set a background color and text color for the header */
+  header {
+    background-color: rgb(42, 132, 168);
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    display: block;
+  }
+  
+  /* Style the navigation bar */
+  .navStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Style the left part of the navigation bar (logo or site name) */
+  .left {
+    font-size: 24px;
+  }
+  
+  /* Style the right part of the navigation bar (menu items) */
+  .right {
+    display: flex;
+    margin-right: 40px;
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .list li a {
+    margin-left: 55px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add some basic hover effect for the menu items */
+  .list li a:hover {
+    color: #ff9900;
+    /* Change to your desired hover color */
+  }
+
+/* Style for the card container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in a row */
+    gap: 20px; /* Gap between cards */
+}
+
+.card {
+    background-color: rgb(27, 25, 25);
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 6px  rgb(42, 132, 168);
+}
+
+/* Style for the card title */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:  rgb(42, 132, 168);
+}
+
+/* Style for the truncated content */
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: white;
+}
+
+/* Style for the "Read More" button */
+.read-more {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color:  rgb(42, 132, 168);
+    font-weight: bold;
+}
+.read-more:hover{
+    color: #ff9900;
+}
+
+/* Style for rows and columns */
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+/* styles.css */
+
+
+h2 {
+    text-align: center;
+    color:  rgb(42, 132, 168);
+    margin: 20px;
+}
+
+.container_createpost {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px  rgb(42, 132, 168);
+    border: 1px solid #ddd;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    height: 40px;
+}
+
+textarea {
+    height: 250px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:  #007bff;
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 auto; /* Center container horizontally */
+    padding: 20px;
+}
+
+.blog-content p {
+    margin-bottom: 15px;    
+}
+
+.blog-content a{
+    text-decoration: none;
+    color:  rgb(42, 132, 168);
+    font-size: 20px;
+    
+}
+
+.blog-content a:hover{
+    color: #ff9900;
+}

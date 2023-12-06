@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'edit_profile.css' %}">
+</head>
+<body>
+    <header class="edit-profile-header">
+        <h1>Edit Profile</h1>
+    </header>
+
+    <!-- Edit Profile Form -->
+    <section class="edit-profile-form">
+        <form method="POST" action="{% url 'update_profile' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <!-- Profile Picture Upload -->
+            <div class="profile-picture-upload">
+                <label for="profile-upload">Profile Picture:</label>
+                <input type="file" id="profile-upload" name="profile_picture" accept="image/*">
+            </div>
+            <!-- Bio -->
+            <div class="bio">
+                <label for="user-bio">Bio:</label>
+                <textarea id="user-bio" name="bio" rows="4" cols="50">Add your bio here...</textarea>
+            </div>
+            <!-- Date of Birth -->
+            <div class="dob">
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" value="YYYY-MM-DD">
+            </div>
+            <!-- Location -->
+            <div class="location">
+                <label for="user-location">Location:</label>
+                <input type="text" id="user-location" name="location" placeholder="Enter your location">
+            </div>
+            <!-- Save Button -->
+            <button class="save-button" type="submit">Save</button>
+        </form>
+    </section>
+</body>
+</html>
